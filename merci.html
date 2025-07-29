@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation - Carte Validée</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #00ff99;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: #000;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ff99;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .emoji {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .btn-retour {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #00ff99;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn-retour:hover {
+      background-color: #0f9;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 30px 10px;
+      margin-top: 60px;
+      color: #888;
+      text-align: center;
+    }
+
+    footer a {
+      color: #00ff99;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .partners {
+      margin-top: 20px;
+    }
+
+    .partners img {
+      width: 40px;
+      height: auto;
+      margin: 0 8px;
+      vertical-align: middle;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+
+    .partners img:hover {
+      filter: none;
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        margin-top: 30px;
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .emoji {
+        font-size: 36px;
+      }
+
+      .partners img {
+        width: 30px;
+        margin: 0 5px;
+      }
+
+      .btn-retour {
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <div class="emoji">✅</div>
+    <h1>🎉 Félicitations, votre carte est valide</h1>
+    <p>Votre vérification a bien été prise en compte.<br>
+    Votre carte/coupon est active et dispose de fonds disponibles.</p>
+
+    <a href="index.html" class="btn-retour">Retour à l'accueil</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CASH SÉCURITÉ. Tous droits réservés.</p>
+    <p>
+      <a href="#">Mentions légales</a> |
+      <a href="#">Conditions d'utilisation</a>
+    </p>
+    <div class="partners">
+      <img src="visa.png" alt="Visa">
+      <img src="mastercard.png" alt="MasterCard">
+      <img src="paypal.png" alt="PayPal">
+    </div>
+  </footer>
+
+</body>
+</html>
